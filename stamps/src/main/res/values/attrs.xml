@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="Stamps">
+        <attr name="stamps_concentric_text" format="boolean"/>
+        <attr name="stamps_title_array" format="reference"/>
+        <attr name="stamps_title" format="string"/>
+        <attr name="stamps_icon" format="reference"/>
+        <attr name="stamps_color_start" format="color"/>
+        <attr name="stamps_color_end" format="color"/>
+        <attr name="stamps_color_gradient_angle" format="integer"/>
+        <attr name="stamps_type">
+            <enum name="circular" value="1"/>
+            <enum name="triangle" value="2"/>
+            <enum name="square" value="3"/>
+            <enum name="rectangle" value="4"/>
+            <enum name="octagonal" value="5"/>
+        </attr>
+    </declare-styleable>
+</resources>

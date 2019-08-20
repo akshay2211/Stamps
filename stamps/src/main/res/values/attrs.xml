@@ -8,6 +8,7 @@
         <attr name="stamps_color_start" format="color"/>
         <attr name="stamps_color_end" format="color"/>
         <attr name="stamps_color_gradient_angle" format="integer"/>
+        <attr name="stamps_text_size" format="integer"/>
         <attr name="stamps_type">
             <enum name="circular" value="1"/>
             <enum name="triangle" value="2"/>

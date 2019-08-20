@@ -8,10 +8,13 @@
         tools:context=".MainActivity">
 
     <com.fxn.stamps.Stamps
-            android:background="#f00"
             android:layout_width="100dp"
             android:layout_height="100dp"
             android:text="Hello World!"
+            app:stamps_type="circular"
+            app:stamps_title="hey"
+            app:stamps_text_size="25"
+            app:stamps_concentric_text="true"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"

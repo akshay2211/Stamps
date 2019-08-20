@@ -1,12 +1,16 @@
 package com.fxn.stamps
 
 import android.content.Context
+import android.graphics.Canvas
 import android.os.Build
 import android.util.AttributeSet
+import android.util.Log
+import android.view.View
 import android.widget.FrameLayout
 import androidx.annotation.RequiresApi
+import androidx.core.widget.ImageViewCompat
 
-class Stamps : FrameLayout {
+class Stamps : View {
 
     private var config = Config()
 
@@ -40,6 +44,38 @@ class Stamps : FrameLayout {
     }
 
     private fun init(context: Context, attr: AttributeSet?) {
+        Log.e("msg","----> <<<<<<<<<<<<<<<<<<<<<")
+        config = Config()
         config.init(context, attr)
+    }
+
+    override fun onDraw(canvas: Canvas?) {
+        //super.onDraw(canvas)
+        Log.e("msg","----> "+config.type)
+
+        when (config.type) {
+            1 -> {
+                config.circular(canvas)
+                return
+            }
+           /* 2 -> {
+                config.triangle(canvas)
+                return
+            }
+            3 -> {
+                config.square(canvas)
+                return
+            }
+            4 -> {
+                config.rectangle(canvas)
+                return
+            }
+            5 -> {
+                config.octagonal(canvas)
+                return
+            }*/
+
+        }
+
     }
 }
